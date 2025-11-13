@@ -1,0 +1,14 @@
+name: Call Reusable Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-reusable:
+    uses: Hari9490/called-workflow/.github/workflows/reusable_workflow.yaml@main
+    with:
+      environment: "production "
+    secrets:
+      PAT: ${{ secrets.PAT }}
