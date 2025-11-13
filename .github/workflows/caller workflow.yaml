@@ -9,6 +9,4 @@ jobs:
   call-reusable:
     uses: Hari9490/called-workflow/.github/workflows/reusable_workflow.yaml@main
     with:
-      environment: "production "
-    secrets:
-      PAT: ${{ secrets.PAT }}
+      environment: "production"
